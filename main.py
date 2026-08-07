@@ -11,9 +11,20 @@ Usage:
 
 import os
 import sys
+import io
 
 # Ensure project root is on the import path
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+
+# Fix Windows console encoding for box-drawing characters and emojis
+if sys.stdout.encoding != "utf-8":
+    sys.stdout = io.TextIOWrapper(
+        sys.stdout.buffer, encoding="utf-8", errors="replace"
+    )
+if sys.stderr.encoding != "utf-8":
+    sys.stderr = io.TextIOWrapper(
+        sys.stderr.buffer, encoding="utf-8", errors="replace"
+    )
 
 from utils.logger import Logger
 from utils.file_analyzer import FileAnalyzer
