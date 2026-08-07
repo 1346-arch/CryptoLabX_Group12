@@ -1,0 +1,4 @@
+# CryptoLabX - Cryptanalysis Toolkit
+# Week 1: Foundation Dependencies
+
+colorama==0.4.6

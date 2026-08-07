@@ -1,0 +1,18 @@
+Frequency analysis is a technique used to break substitution ciphers by studying the
+frequency of letters or groups of letters in a ciphertext. The technique relies on
+the fact that in any given language certain letters and combinations of letters occur
+with characteristic frequencies.
+
+In English text, the most common letters in order of frequency are:
+E T A O I N S H R D L C U M W F G Y P B V K J X Q Z
+
+The letter E alone accounts for approximately 12.7 percent of all letters in typical
+English text. The letters T and A follow at roughly 9.1 and 8.2 percent respectively.
+
+Common digraphs include TH, HE, IN, ER, AN, RE, and ON. Common trigraphs include
+THE, AND, ING, HER, and HAT. These patterns remain consistent across large bodies
+of text and provide powerful tools for the cryptanalyst.
+
+By comparing the frequency distribution of a ciphertext against the expected frequency
+distribution of the source language, a cryptanalyst can make educated guesses about
+the substitution mapping and gradually recover the plaintext.

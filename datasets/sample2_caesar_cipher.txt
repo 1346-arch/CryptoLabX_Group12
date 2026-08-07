@@ -1,0 +1,20 @@
+The Caesar cipher is one of the simplest and most widely known encryption techniques.
+It is a type of substitution cipher in which each letter in the plaintext is replaced
+by a letter some fixed number of positions down the alphabet.
+
+For example, with a shift of 3:
+  A -> D
+  B -> E
+  C -> F
+  ...
+  X -> A
+  Y -> B
+  Z -> C
+
+Plaintext:  THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG
+Ciphertext: WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ
+
+The method is named after Julius Caesar, who used it in his private correspondence.
+While extremely easy to break with modern techniques, it serves as an excellent
+introduction to the concepts of encryption and decryption. The Caesar cipher can
+be broken using frequency analysis or simply trying all 25 possible shifts.

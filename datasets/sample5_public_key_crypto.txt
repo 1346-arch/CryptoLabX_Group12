@@ -1,0 +1,19 @@
+Public key cryptography, also known as asymmetric cryptography, revolutionized the
+field of information security when it was introduced in the 1970s. Unlike symmetric
+encryption where both parties share the same secret key, public key cryptography
+uses a pair of mathematically related keys: a public key and a private key.
+
+The RSA algorithm, named after its inventors Rivest, Shamir, and Adleman, was one
+of the first practical public key systems. Published in 1977, RSA relies on the
+mathematical difficulty of factoring the product of two large prime numbers.
+
+The Diffie-Hellman key exchange protocol, published in 1976 by Whitfield Diffie and
+Martin Hellman, allows two parties to establish a shared secret over an insecure
+channel. This protocol is based on the discrete logarithm problem.
+
+Elliptic Curve Cryptography offers the same level of security as RSA but with
+significantly smaller key sizes, making it ideal for mobile and embedded devices.
+A 256-bit ECC key provides comparable security to a 3072-bit RSA key.
+
+These asymmetric systems form the backbone of secure internet communication,
+digital signatures, cryptocurrency, and certificate-based authentication systems.

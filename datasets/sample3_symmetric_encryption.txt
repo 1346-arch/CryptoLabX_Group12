@@ -1,0 +1,16 @@
+In the realm of modern symmetric encryption, AES stands as the gold standard.
+The Advanced Encryption Standard was established by the US National Institute of
+Standards and Technology in 2001. It replaced the older Data Encryption Standard
+which had become vulnerable due to its short key length of only 56 bits.
+
+AES operates on fixed block sizes of 128 bits and supports key lengths of 128, 192,
+or 256 bits. The algorithm consists of multiple rounds of substitution, permutation,
+mixing, and key addition operations. The number of rounds depends on the key length:
+10 rounds for 128-bit keys, 12 rounds for 192-bit keys, and 14 rounds for 256-bit keys.
+
+AES is used worldwide to protect classified government information, banking transactions,
+wireless communications, and virtually every form of encrypted digital data. Its strength
+lies in its resistance to all known practical attacks when implemented correctly.
+
+Other notable symmetric ciphers include Blowfish, Twofish, Serpent, and ChaCha20.
+Each has unique characteristics that make them suitable for specific applications.

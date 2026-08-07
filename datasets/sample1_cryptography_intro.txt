@@ -1,0 +1,17 @@
+Cryptography is the practice and study of techniques for securing communication and data
+in the presence of adversaries. It encompasses encryption, decryption, hashing, digital
+signatures, and key exchange protocols. From ancient times, humans have sought methods
+to conceal messages from unintended recipients.
+
+The earliest known use of cryptography dates back to ancient Egypt around 1900 BCE, where
+non-standard hieroglyphs were used in inscriptions. The Spartans used a device called a
+scytale for transposition ciphers around 700 BCE. Julius Caesar famously employed a simple
+substitution cipher, now known as the Caesar cipher, to communicate with his generals.
+
+Modern cryptography began in the 20th century with the development of mechanical cipher
+machines like the Enigma used by Germany in World War II. The breaking of Enigma by
+Alan Turing and his team at Bletchley Park is considered one of the greatest intellectual
+achievements of the war and laid the foundation for modern computer science.
+
+Today, cryptography underpins nearly every aspect of digital security, from HTTPS web
+browsing to cryptocurrency transactions and secure messaging applications.
