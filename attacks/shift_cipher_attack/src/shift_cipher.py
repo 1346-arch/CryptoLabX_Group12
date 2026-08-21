@@ -3,7 +3,11 @@ def encrypt(text, key):
     result = ""
 
     for char in text:
-        result += chr(ord(char) + key) % 26
+        if char == " ":
+            result += " "
+
+        else:
+            result += chr((ord(char) - ord('a') + key) % 26 + ord('a'))
 
     return result
 
@@ -11,3 +15,6 @@ def encrypt(text, key):
 def decrypt(text, key):
 
     return encrypt(text, -key)
+
+print(encrypt("hello", 5))
+print(decrypt(encrypt("hello", 5), 5))
