@@ -93,7 +93,7 @@ def chi_square_attack(ciphertext):
 
 
 # Test
-ciphertext = "mjqqt btwqi"
+ciphertext = "ymj vznjy qfpj rnwwtwji ymj jajsnsl xyfwx"
 
 key, plaintext = chi_square_attack(ciphertext)
 

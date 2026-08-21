@@ -16,5 +16,5 @@ def decrypt(text, key):
 
     return encrypt(text, -key)
 
-print(encrypt("hello", 5))
-print(decrypt(encrypt("hello", 5), 5))
+print(encrypt("the quiet lake mirrored the evening stars", 5))
+print(decrypt(encrypt("hello world in python", 5), 5))

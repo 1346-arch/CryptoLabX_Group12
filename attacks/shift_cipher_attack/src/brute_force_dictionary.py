@@ -3,7 +3,7 @@ from shift_cipher import decrypt
 
 dictionary_path = os.path.join(
     os.path.dirname(__file__),
-    "/home/mnitcse/Desktop/CryptoLabX_Group12/attacks/dictionary/english_words.txt"
+    "../../dictionary/english_words.txt"
 )
 
 with open(dictionary_path, "r") as file:
