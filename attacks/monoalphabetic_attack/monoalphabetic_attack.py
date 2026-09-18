@@ -119,3 +119,11 @@ def verify_solution(ciphertext, plaintext, substitutions):
             generated += ch
 
     return generated == ciphertext
+
+def record_decision(step, observation, possible, tested, result, decision):
+    print("\nStep:", step)
+    print("Observation:", observation)
+    print("Possible Substitution:", possible)
+    print("Substitution Tested:", tested)
+    print("Result:", result)
+    print("Decision:", decision)
