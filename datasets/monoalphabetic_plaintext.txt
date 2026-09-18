@@ -1,0 +1,25 @@
+Introduction to Modern Cryptography
+the alphabet, and the plaintext characters in positions i,t+i, 2t+i, and
+so on are encrypted using the i
+th permutation. Show how to break this
+version of the cipher.
+1.4 In an attempt to prevent Kasiski’s attack on the Vigen`ere cipher, the
+following modification has been proposed. Given the period t of the
+cipher, the plaintext is broken up into blocks of size t. Recall that within
+each block, the Vigen`ere cipher works by encrypting the ith character
+with the ith key (using a basic cipher). Letting the key be k1, . . . , kt,
+this means the ith character in each block is encrypted by adding ki to
+it, modulo 26. The proposed modification is to encrypt the ith character
+in the jth block by adding ki + j modulo 26.
+(a) Show that decryption can be carried out.
+(b) Describe the effect of the above modification on Kasiski’s attack.
+(c) Devise an alternate attack that works better than Kasiski’s attack.
+1.5 Show that the shift, substitution, and Vigen`ere ciphers are all trivial to
+break using a known-plaintext attack. (Assuming normal English text
+is being encrypted in each case.) How much known plaintext is needed
+to completely recover the key for each of the ciphers (without resorting
+to any statistics)?
+1.6 Show that the shift, substitution, and Vigen`ere ciphers are all trivial
+to break using a chosen-plaintext attack. How much plaintext must
+be encrypted in order for the adversary to completely recover the key?
+Compare to the previous question.
