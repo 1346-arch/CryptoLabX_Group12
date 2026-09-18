@@ -1,0 +1,254 @@
+============================================================
+VIGENERE CIPHER CRYPTANALYSIS
+KASISKI EXAMINATION AND FREQUENCY ANALYSIS
+============================================================
+
+Group Number: 12
+Ciphertext Used: Ciphertext-2 (Even Group Numbers)
+
+------------------------------------------------------------
+1. CIPHERTEXT PREPROCESSING
+------------------------------------------------------------
+
+The ciphertext was cleaned by:
+- Converting all letters to uppercase.
+- Removing spaces.
+- Removing newlines.
+- Removing all non-alphabetic characters.
+
+Cleaned ciphertext length: 758
+
+
+------------------------------------------------------------
+2. KASISKI EXAMINATION
+------------------------------------------------------------
+
+Repeated sequences of length 3 to 5 were identified.
+
+Distances between repeated occurrences were calculated.
+Factors of these distances were then counted to identify
+possible key lengths.
+
+Kasiski Analysis:
+
+Key Length    Occurrences
+3             96
+2             94
+6             90
+4             89
+12            89
+8             43
+16            29
+13            21
+5             17
+15            17
+9             16
+10            16
+20            16
+18            15
+7             12
+14            10
+19             7
+17             4
+11             2
+
+
+------------------------------------------------------------
+3. INDEX OF COINCIDENCE ANALYSIS
+------------------------------------------------------------
+
+Index of Coincidence was calculated for candidate key
+lengths from 2 to 20.
+
+Key Length    Average IC
+2             0.0457
+3             0.0495
+4             0.0503
+5             0.0433
+6             0.0589
+7             0.0440
+8             0.0500
+9             0.0485
+10            0.0454
+11            0.0426
+12            0.0717
+13            0.0449
+14            0.0455
+15            0.0491
+16            0.0509
+17            0.0433
+18            0.0570
+19            0.0405
+20            0.0485
+
+The strongest IC value was obtained for key length 12.
+
+Estimated Key Length: 12
+
+
+------------------------------------------------------------
+4. CIPHERTEXT GROUPING
+------------------------------------------------------------
+
+The ciphertext was divided into 12 groups.
+
+Each group contains characters encrypted using the same
+position of the Vigenere key.
+
+Group 1  -> 64 letters
+Group 2  -> 64 letters
+Group 3  -> 63 letters
+Group 4  -> 63 letters
+Group 5  -> 63 letters
+Group 6  -> 63 letters
+Group 7  -> 63 letters
+Group 8  -> 63 letters
+Group 9  -> 63 letters
+Group 10 -> 63 letters
+Group 11 -> 63 letters
+Group 12 -> 63 letters
+
+
+------------------------------------------------------------
+5. FREQUENCY ANALYSIS
+------------------------------------------------------------
+
+Frequency analysis was performed independently on each
+of the 12 groups.
+
+Group 1:
+Y=13, I=6, U=6, B=4, L=4, N=4, W=4,
+F=3, H=3, O=3, X=3, G=2, M=2,
+A=1, C=1, J=1, P=1, Q=1, S=1, Z=1
+
+Group 2:
+N=10, A=8, R=8, G=6, E=4, U=4,
+C=3, T=3, V=3, Y=3, B=2, F=2,
+S=2, Z=2, H=1, O=1, P=1, Q=1
+
+Group 3:
+B=8, K=6, M=6, Z=6, L=5, V=5, W=5,
+I=4, P=4, A=3, G=2, Q=2,
+C=1, D=1, E=1, N=1, O=1, T=1, U=1
+
+Group 4:
+M=11, X=9, H=8, W=8, B=6, K=4, G=3,
+A=2, E=2, L=2, N=2, R=2, Y=2,
+O=1, T=1
+
+Group 5:
+S=9, X=7, M=6, E=5, V=5, P=4, Q=4,
+R=4, W=4, I=3, H=2, L=2, T=2, Y=2,
+A=1, G=1, J=1, Z=1
+
+Group 6:
+R=9, D=7, H=6, F=5, I=5, U=5, L=4,
+Q=4, W=4, E=2, G=2, K=2, O=2, P=2,
+B=1, J=1, V=1, X=1
+
+Group 7:
+W=9, F=8, L=7, K=5, S=5, A=4, J=4,
+D=3, T=3, U=3, V=2, X=2,
+B=1, E=1, H=1, M=1, N=1, Q=1, Y=1, Z=1
+
+Group 8:
+X=12, M=8, B=6, E=6, A=4, H=4, T=4,
+I=3, L=3, W=3, K=2, N=2, Z=2,
+O=1, R=1, V=1, Y=1
+
+Group 9:
+E=11, T=8, A=6, D=4, H=4, L=4, N=4,
+C=3, S=3, B=2, F=2, I=2, O=2, R=2, U=2,
+G=1, P=1, W=1, Y=1
+
+Group 10:
+L=7, A=6, M=6, G=5, H=5, T=5, X=5,
+E=4, K=4, Z=3, I=2, O=2, P=2, Y=2,
+B=1, N=1, U=1, V=1, W=1
+
+Group 11:
+I=12, S=8, X=8, E=5, H=5, M=5, L=4,
+P=4, R=4, V=2, W=2, Y=2,
+G=1, T=1
+
+Group 12:
+W=12, F=8, G=7, K=5, L=5, H=4,
+A=3, O=3, S=3, V=3, D=2, J=2, Z=2,
+M=1, T=1, U=1, X=1
+
+
+------------------------------------------------------------
+6. PROBABLE SHIFTS
+------------------------------------------------------------
+
+Each group was treated as a Caesar cipher.
+The probable shift was determined by comparing the observed
+frequency distribution with standard English letter
+frequencies.
+
+Group    Shift    Key Letter
+1        20       U
+2        13       N
+3         8       I
+4        19       T
+5         4       E
+6         3       D
+7        18       S
+8        19       T
+9         0       A
+10       19       T
+11        4       E
+12       18       S
+
+
+------------------------------------------------------------
+7. RECOVERED KEY
+------------------------------------------------------------
+
+Recovered shifts:
+
+20 13 8 19 4 3 18 19 0 19 4 18
+
+Recovered Key:
+
+UNITEDSTATES
+
+Key Length: 12
+
+
+------------------------------------------------------------
+8. RECOVERED PLAINTEXT
+------------------------------------------------------------
+
+WETHEREFORETHEREPRESENTATIVESOFTHEUNITEDSTATESOFAMERICAINGENERALCONGRESSASSEMBLEDAPPEALINGTOTHESUPREMEJUDGEOFTHEWORLDFORTHERECTITUDEOFOURINTENTIONSDOINTHENAMEANDBYAUTHORITYOFTHEGOODPEOPLEOFTHESECOLONIESSOLEMNLYPUBLISHANDDECLARETHATTHESEUNITEDCOLONIESAREANDOFRIGHTOUGHTTOBEFREEANDINDEPENDENTSTATESTHATTHEYAREABSOLVEDFROMALLALLEGIANCETOTHEBRITISHCROWNANDTHATALLPOLITICALCONNECTIONBETWEENTHEMANDTHESTATEOFGREATBRITAINISANDOUGHTTOBETOTALLYDISSOLVEDANDTHATASFREEANDINDEPENDENTSTATESTHEYHAVEFULLPOWERTOLEVYWARCONCLUDEPEACECONTRACTALLIANCESESTABLISHCOMMERCEANDTODOALLOTHERACTSANDTHINGSWHICHINDEPENDENTSTATESMAYOFRIGHTDOANDFORTHESUPPORTOFTHISDECLARATIONWITHAFIRMRELIANCEONTHEPROTECTIONOFDIVINEPROVIDENCEWEMUTUALLYPLEDGETOEACHOTHEROURLIVESOURFORTUNESANDOURSACREDHONOR
+
+
+------------------------------------------------------------
+9. VERIFICATION
+------------------------------------------------------------
+
+The recovered plaintext was re-encrypted using the recovered
+Vigenere key.
+
+Original ciphertext length : 758
+Generated ciphertext length: 758
+
+Ciphertext matches: True
+
+VERIFICATION SUCCESSFUL
+
+
+------------------------------------------------------------
+10. RESULT
+------------------------------------------------------------
+
+The Vigenere ciphertext was successfully cryptanalyzed.
+
+Estimated Key Length : 12
+Recovered Key        : UNITEDSTATES
+Plaintext Recovered  : YES
+Re-encryption Match   : TRUE
+
+Therefore, the recovered key and plaintext correctly reproduce
+the original ciphertext.
+============================================================
